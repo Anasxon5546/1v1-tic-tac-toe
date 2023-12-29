@@ -33,6 +33,7 @@ body {
   justify-content: center;
   color: black;
   font-size: 40px;
+  cursor: pointer;
 }
 .popup {
   width: 100vw;
