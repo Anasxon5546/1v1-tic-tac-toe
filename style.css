@@ -16,6 +16,7 @@ body {
 
 #container {
   width: calc(80vw);
+  max-width: 600px;
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   background: white;
@@ -26,6 +27,7 @@ body {
 
 .box {
   width: calc(26.66vw);
+  max-width: 200px;
   aspect-ratio: 1 / 1;
   border: 3px solid black;
   display: flex;
@@ -35,6 +37,11 @@ body {
   font-size: 40px;
   cursor: pointer;
 }
+
+.box:hover{
+  opacity: 0.6;
+}
+
 .popup {
   width: 100vw;
   height: 100%;
