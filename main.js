@@ -9,23 +9,6 @@ let player = 0;
 
 boxes.forEach(function(box) {
   box.addEventListener('click', function() {
-
-    
-
-  box.addEventListener('mouseenter', function() {
-    if (box.innerHTML === '' && !popup.style.display) {
-      box.innerHTML = (player % 2 === 0) ? 'X' : 'O';
-    }
-  });
-  
-  box.addEventListener('mouseleave', function() {
-    if (box.innerHTML === 'X' && !popup.style.display) {
-      box.innerHTML = '';
-    }
-  });
-  
-
-
     if (box.innerHTML === '') {
       box.innerHTML = (player % 2 === 0) ? 'X' : 'O';
       turn.innerHTML = (player % 2 === 0) ? 'TURN OF O' : 'TURN OF X';
